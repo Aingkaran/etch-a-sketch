@@ -49,6 +49,12 @@ button.addEventListener('click', (e) => {
   }
   else {
     let gridSize=prompt("Try that again, what grid size would you like between 1 to 100")
+    if (gridSize<100){
+      clear()
+      boxLength= 800/gridSize-5;
+      area= gridSize*gridSize;
+      changeGrid(boxLength,area);
+    }
   }
   
   
